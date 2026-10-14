@@ -1,0 +1,354 @@
+{
+  "houses": [
+    {
+      "id": "1",
+      "value": "grifinoria",
+      "label": "Grifinória",
+      "points": 312
+    },
+    {
+      "id": "2",
+      "value": "sonserina",
+      "label": "Sonserina",
+      "points": 287
+    },
+    {
+      "id": "3",
+      "value": "corvinal",
+      "label": "Corvinal",
+      "points": 301
+    },
+    {
+      "id": "4",
+      "value": "lufalufa",
+      "label": "Lufa-Lufa",
+      "points": 264
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "fullName": "Harry James Potter",
+      "originCountry": "Reino Unido",
+      "house": "grifinoria",
+      "year": 4,
+      "wand": "Azevinho, 28cm, pena de fênix",
+      "bloodType": "mestiço",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "Registro escolar ativo."
+    },
+    {
+      "id": "2",
+      "fullName": "Hermione Jean Granger",
+      "originCountry": "Reino Unido",
+      "house": "sonserina",
+      "year": 4,
+      "wand": "Videira, 27cm, fibra de coração de dragão",
+      "bloodType": "trouxa",
+      "pet": "gato",
+      "status": "afastado",
+      "notes": "N/A"
+    },
+    {
+      "id": "3",
+      "fullName": "Ronald Bilius Weasley",
+      "originCountry": "Reino Unido",
+      "house": "corvinal",
+      "year": 4,
+      "wand": "Salgueiro, 36cm, pelo de unicórnio",
+      "bloodType": "puro",
+      "pet": "rato",
+      "status": "intercambio",
+      "notes": "N/A"
+    },
+    {
+      "id": "5",
+      "fullName": "Neville Longbottom",
+      "originCountry": "Reino Unido",
+      "house": "lufalufa",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "sapo",
+      "status": "expulso",
+      "notes": "N/A"
+    },
+    {
+      "id": "6",
+      "fullName": "Ginny Weasley",
+      "originCountry": "Reino Unido",
+      "house": "grifinoria",
+      "year": 3,
+      "wand": "Não informada",
+      "bloodType": "puro",
+      "pet": "coruja",
+      "status": "formado",
+      "notes": "N/A"
+    },
+    {
+      "id": "7",
+      "fullName": "Fred Weasley",
+      "originCountry": "Reino Unido",
+      "house": "grifinoria",
+      "year": 6,
+      "wand": "Não informada",
+      "bloodType": "puro",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "N/A"
+    },
+    {
+      "id": "8",
+      "fullName": "George Weasley",
+      "originCountry": "Reino Unido",
+      "house": "grifinoria",
+      "year": 6,
+      "wand": "Não informada",
+      "bloodType": "puro",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "N/A"
+    },
+    {
+      "id": "9",
+      "fullName": "Luna Lovegood",
+      "originCountry": "Reino Unido",
+      "house": "corvinal",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "coruja",
+      "status": "formado",
+      "notes": "N/A"
+    },
+    {
+      "id": "10",
+      "fullName": "Cho Chang",
+      "originCountry": "Reino Unido",
+      "house": "corvinal",
+      "year": 5,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "N/A"
+    },
+    {
+      "id": "11",
+      "fullName": "Cedric Diggory",
+      "originCountry": "Reino Unido",
+      "house": "lufalufa",
+      "year": 6,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "N/A"
+    },
+    {
+      "id": "12",
+      "fullName": "Seamus Finnigan",
+      "originCountry": "Irlanda",
+      "house": "grifinoria",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "mestiço",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "Acompanhamento após incidentes em aulas práticas. (Observação interna)"
+    },
+    {
+      "id": "13",
+      "fullName": "Dean Thomas",
+      "originCountry": "Reino Unido",
+      "house": "grifinoria",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "N/A"
+    },
+    {
+      "id": "14",
+      "fullName": "Lavender Brown",
+      "originCountry": "Reino Unido",
+      "house": "grifinoria",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "gato",
+      "status": "expulso",
+      "notes": "N/A"
+    },
+    {
+      "id": "15",
+      "fullName": "Parvati Patil",
+      "originCountry": "Reino Unido",
+      "house": "grifinoria",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "N/A"
+    },
+    {
+      "id": "16",
+      "fullName": "Padma Patil",
+      "originCountry": "Reino Unido",
+      "house": "corvinal",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "N/A"
+    },
+    {
+      "id": "17",
+      "fullName": "Pansy Parkinson",
+      "originCountry": "Reino Unido",
+      "house": "sonserina",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "gato",
+      "status": "matriculado",
+      "notes": "N/A"
+    },
+    {
+      "id": "18",
+      "fullName": "Vincent Crabbe",
+      "originCountry": "Reino Unido",
+      "house": "sonserina",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "rato",
+      "status": "intercambio",
+      "notes": "N/A"
+    },
+    {
+      "id": "19",
+      "fullName": "Gregory Goyle",
+      "originCountry": "Reino Unido",
+      "house": "sonserina",
+      "year": 4,
+      "wand": "Não informada",
+      "bloodType": "desconhecido",
+      "pet": "rato",
+      "status": "matriculado",
+      "notes": "N/A"
+    },
+    {
+      "id": "20",
+      "fullName": "Colin Creevey",
+      "originCountry": "Reino Unido",
+      "house": "grifinoria",
+      "year": 2,
+      "wand": "Não informada",
+      "bloodType": "trouxa",
+      "pet": "coruja",
+      "status": "afastado",
+      "notes": "Acesso a áreas restritas negado."
+    },
+    {
+      "id": "08ec",
+      "fullName": "Bruno",
+      "originCountry": "Do saco do pai",
+      "house": "corvinal",
+      "year": 1,
+      "wand": "Varinha do Rafael",
+      "bloodType": "trouxa",
+      "pet": "coruja",
+      "status": "matriculado",
+      "notes": "N/A"
+    }
+  ],
+  "staff": [
+    {
+      "id": "1",
+      "wizardName": "Albus Dumbledore",
+      "password": "hogwarts123"
+    },
+    {
+      "id": "2",
+      "wizardName": "Minerva McGonagall",
+      "password": "gatoXadrez"
+    },
+    {
+      "id": "3",
+      "wizardName": "Rubeus Hagrid",
+      "password": "guardachaves"
+    },
+    {
+      "id": "4",
+      "wizardName": "Severus Snape",
+      "password": "pocoesSecretas"
+    },
+    {
+      "id": "5",
+      "wizardName": "Filius Flitwick",
+      "password": "feiticos123"
+    },
+    {
+      "id": "6",
+      "wizardName": "Pomona Sprout",
+      "password": "mandragora"
+    },
+    {
+      "id": "7",
+      "wizardName": "Madam Pomfrey",
+      "password": "alaHospitalar"
+    },
+    {
+      "id": "8",
+      "wizardName": "Argus Filch",
+      "password": "vassouraEbronze"
+    }
+  ],
+  "notices": [
+    {
+      "id": "2",
+      "title": "Inscrições para o Clube de Duelos",
+      "day": "2025-09-06",
+      "createdBy": "Filius Flitwick",
+      "updatedBy": "N/A",
+      "content": "Inscrições abertas para alunos do 3º ao 7º ano. Tragam varinhas e sigam a etiqueta de duelo."
+    },
+    {
+      "id": "3",
+      "title": "Atualização de pontuação das Casas",
+      "day": "2025-09-10",
+      "createdBy": "Albus Dumbledore",
+      "updatedBy": "N/A",
+      "content": "A pontuação das Casas foi revisada. Mérito acadêmico conta. Indisciplina também."
+    },
+    {
+      "id": "4",
+      "title": "Aula prática: Criaturas Mágicas",
+      "day": "2025-09-12",
+      "createdBy": "Rubeus Hagrid",
+      "updatedBy": "N/A",
+      "content": "Tragam luvas e sigam as instruções. Não toquem em nada sem autorização."
+    },
+    {
+      "id": "5",
+      "title": "Aviso da Ala",
+      "day": "2025-09-15",
+      "createdBy": "Madam Pomfrey",
+      "updatedBy": "Albus Dumbledore",
+      "content": "Qualquer acidente com feitiços, poções ou criaturas deve ser informado imediatamente. Não tentem 'resolver no dormitório'."
+    },
+    {
+      "id": "b2de",
+      "title": "Patrimônios dos Computadores",
+      "day": "2025-12-16",
+      "createdBy": "Albus Dumbledore",
+      "updatedBy": "N/A",
+      "content": "O homi faz cinco meses que está para criar as etiquetas dos computadores. Depois sobrea para nós e ainda nos cobra para isso"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Hogwarts | Entrada no Castelo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Carrega o CSS -->
+   <link rel="stylesheet" href="/pages/staff/login/login.css">
+   <link rel="stylesheet" href="/components/navbar/navbar.css">
+   <link rel="stylesheet" href="/components/footer/footer.css">
+
+  <!-- Carrega o favicon -->
+   <link rel="icon" href="/favicon/favicon.png">
+
+   <!-- Carrega o JS -->
+    <script src="/components/navbar/navbar.js" defer></script>
+    <script src="/components/footer/footer.js" defer></script>
+    <script src="/pages/staff/login/login.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Pular Para o Conteúdo Principal</a>
+
+  <app-navbar></app-navbar>
+
+  <main id="content" tabindex="-1">
+    <!-- Section container -->
+    <section aria-labelledby="titulo-entrada" class="container-content">
+      <h2>Entrada no castelo</h2>
+
+      <p>
+        Algumas portas em Hogwarts exigem mais do que bater na madeira. Aqui, apenas
+        estudantes e funcionários autorizados podem acessar os corredores internos.
+      </p>
+
+      <!-- Section form -->
+      <section aria-label="Formulário de entrada">
+        <form id="form-login" class="form">
+          <fieldset class="form__fieldset">
+            <legend>Identificação do bruxo</legend>
+
+            <figure class="form__figure">
+              <img src="/assets/img/img-login/img_top_form_login.jpeg" alt="">
+            </figure>
+
+            <div class="form__style-field">
+              <label for="wizardName">Nome do Bruxo ou Bruxa<span>*</span></label>
+              <input
+                id="wizardName"
+                name="wizardName"
+                type="text"
+                placeholder="Ex.: Minerva McGonagall"
+                required
+              >
+            </div>
+
+            <div class="form__style-field">
+              <label for="password">Palavra-Passe<span>*</span></label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Ex.: Eu juro solenemente..."
+                required
+              >
+            </div>
+
+            <div class="form__button">
+              <button type="submit">Abrir Portões de Hogwarts</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <app-footer></app-footer>
+</body>
+</html>

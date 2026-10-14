@@ -1,0 +1,126 @@
+.button-hamburguer {
+    position: fixed;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #946B2D;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    backdrop-filter: blur(20px);
+}
+
+.button-hamburguer>img {
+    width: 80px;
+}
+
+.container-header {
+    background-color: rgba(30, 36, 56, 0.6);
+    border-bottom: 1px solid #946B2D;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    transform: translateY(-100%);
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.container-header--open {
+    transform: translateY(0%);
+}
+
+.container-header__logo img {
+    width: 130px;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+}
+
+.container-header__ul {
+    text-align: center;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav a[aria-current="page"] {
+    border-radius: 4px;
+    outline: 1px solid rgba(211, 166, 37, 0.9);
+    box-shadow:
+        0 0 0 2px rgba(211, 166, 37, 0.12),
+        0 0 18px rgba(211, 166, 37, 0.18);
+    color: rgba(255, 244, 210, 0.95);
+    text-shadow: 0 0 10px rgba(211, 166, 37, 0.18);
+    transition: 0.2s;
+}
+
+@media (width >=500px) {
+    .container-header__logo {
+        text-align: center;
+    }
+
+    .container-header__logo img {
+        width: 130px;
+        position: unset;
+    }
+
+    .container-header__ul {
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+.container-header__ul a {
+    color: #F4E3C3;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+.container-header__ul a:hover {
+    border-radius: 4px;
+    outline: 1px solid rgba(211, 166, 37, 0.9);
+    box-shadow:
+        0 0 0 2px rgba(211, 166, 37, 0.12),
+        0 0 18px rgba(211, 166, 37, 0.18);
+    color: rgba(255, 244, 210, 0.95);
+    text-shadow: 0 0 10px rgba(211, 166, 37, 0.18);
+    transition: 0.2s;
+}
+
+.container-header__ul a:focus-visible,
+.button-hamburguer:focus-visible {
+    outline: 1px solid #D3A625;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (width >=768px) {
+    .button-hamburguer {
+        display: none;
+    }
+
+    .container-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transform: none;
+        height: 60px;
+    }
+
+    .container-header__logo img {
+        width: 110px;
+        position: unset;
+    }
+
+    .container-header__ul {
+        text-align: center;
+        margin: 0px;
+        flex-direction: row;
+    }
+}

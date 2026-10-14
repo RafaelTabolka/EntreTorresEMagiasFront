@@ -1,0 +1,225 @@
+/* Common styles */
+body {
+    margin: 0;
+    background-color: #252B3D;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* largura da barra de rolagem*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* “thumb” (a alça que você arrasta) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: rgba(246, 187, 89, 0.55);
+  border-radius: 10px;
+  border: 2px solid rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(246, 187, 89, 0.75);
+}
+
+h2 {
+    margin: 8px 0;
+    color: #f6bb59;
+    text-shadow:
+        0 0 8px #f6bb59;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p {
+    color: #b9c2d3;
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+    text-align: center;
+}
+
+figure {
+    margin: 12px 0;
+}
+
+/* Skip link */
+.skip-link {
+    background-color: #1E2438;
+    outline: 1px solid #D3A625;
+    border-radius: 4px;
+    color: #F4E3C3;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    transform: translateY(-150%);
+}
+
+.skip-link:focus-visible {
+    transform: translateY(0%);
+    z-index: 1;
+}
+
+/* Section container */
+main {
+    flex: 1;
+}
+
+.container-content {
+    margin-top: 73px;
+    padding: 8px;
+}
+
+@media (width >=768px) {
+    .container-content   {
+        margin: 93px;
+    }
+}
+
+/* Section form */
+.form {
+    background: linear-gradient(120deg,
+            #303750 0%,
+            #3E4A78 35%,
+            #303750 70%,
+            #252B3D 100%);
+    outline: 2px solid #414A65;
+    box-shadow: 0 0 20px rgba(123, 215, 255, 0.18);
+    padding: 8px;
+    border-radius: 4px;
+    margin: 16px auto 0;
+}
+
+@media (width >=650px) {
+    .form {
+        max-width: 650px;
+    }
+}
+
+.form__figure {
+    text-align: center;
+}
+
+.form__figure>img {
+    width: 100%;
+    outline: 2px solid #D3A625;
+    border-radius: 4px;
+}
+
+.form__fieldset {
+    border: none;
+}
+
+.form__fieldset>legend {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    color: #fbbf24;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.form__style-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.form__style-field>label {
+    color: #E5E7EB;
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+}
+
+.form__style-field span {
+    color: #fbbf24;
+    font-size: 1.2rem;
+}
+
+.form__style-field>input {
+    color: #F9FAFB;
+    background-color: #1E2438;
+    height: 28px;
+    border: none;
+    outline: 2px solid #4B5563;
+}
+
+@media (width >=540px) {
+    .form__style-field>input {
+        font-size: 1.1rem;
+    }
+}
+
+.form__style-field>input:focus-visible {
+    outline: 2px solid #fbbf24;
+}
+
+.form__style-field>input::placeholder {
+    color: #9CA3AF;
+}
+
+button[type="submit"] {
+    background-color: #fbbf24;
+    color: #111827;
+    border: none;
+    margin-top: 8px;
+    outline: 1px solid #f59e0b;
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(251, 191, 36, 0.75);
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #facc15;
+    color: #111827;
+    outline: 1px solid #fbbf24;
+}
+
+button[type="submit"]:focus-visible {
+    background-color: #facc15;
+    color: #111827;
+    outline: 2px solid #9CA3AF;
+}
+
+@media (width >=540px) {
+    .form__fieldset>legend {
+        font-size: 1.3rem;
+    }
+
+    .form__style-field>label {
+        font-size: 1.3rem;
+    }
+
+    .form__style-field>input {
+        height: 40px;
+    }
+
+    .form__style-field>input::placeholder {
+        font-size: 1rem;
+    }
+
+    .form__style-field>select {
+        height: 34px;
+    }
+
+    .form__button {
+        text-align: center;
+    }
+
+    button[type="submit"] {
+        height: 44px;
+        width: 60%;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,421 @@
+/* Common Styles */
+body {
+    margin: 0;
+    background-color: #252B3D;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* largura da barra de rolagem*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* “thumb” (a alça que você arrasta) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: rgba(246, 187, 89, 0.55);
+  border-radius: 10px;
+  border: 2px solid rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(246, 187, 89, 0.75);
+}
+
+.section-castle,
+.section-houses,
+.section-activities__commom-style {
+    background: linear-gradient(120deg,
+            #303750 0%,
+            #3E4A78 35%,
+            #303750 70%,
+            #252B3D 100%);
+    outline: 2px solid #414A65;
+    box-shadow: 0 0 20px rgba(123, 215, 255, 0.18);
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+h2 {
+    margin: 8px 0;
+    color: #f6bb59;
+    text-shadow:
+        0 0 8px #f6bb59;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    color: #fbbf24;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+figcaption {
+    color: #fbbf24;
+    font-weight: 200;
+}
+
+h2,
+h3,
+h4 {
+    margin: 8px 0;
+}
+
+p {
+    color: #E5E7EB;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+figure {
+    margin: 12px 0;
+}
+
+@media (width >=450px) {
+    h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (width >=600px) {
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (width >=768px) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (width >=992px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (width >=1280px) {
+    .section-castle,
+    .section-houses,
+    .section-activities {
+        max-width: 1260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Skip link */
+.skip-link {
+    background-color: #1E2438;
+    outline: 1px solid #D3A625;
+    border-radius: 4px;
+    color: #F4E3C3;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    padding: 12px;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    transform: translateY(-150%);
+}
+
+.skip-link:focus-visible {
+    transform: translateY(0%);
+    z-index: 1;
+}
+
+/* Main content */
+.main-content {
+    margin-top: 88px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+/* Section castle */
+.section-castle__links {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section-castle__links>a {
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 1.1rem;
+}
+
+.section-castle__link-letter {
+    background-color: #f6bb59;
+    color: #1b2033;
+    outline: 1px solid #b87d28;
+    box-shadow: 0 0 12px rgba(246, 187, 89, 0.55);
+}
+
+.section-castle__link-letter:hover,
+.section-castle__link-letter:focus-visible {
+    background-color: #ffd37a;
+    outline: 1px solid #f6bb59;
+    transition: 0.2s;
+    box-shadow: 0 0 6px rgba(255, 211, 122, 0.85);
+}
+
+.section-castle__link-gates {
+    background-color: #2c3552;
+    color: #f9fafb;
+    outline: 1px solid #f6bb59;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.7)
+}
+
+.section-castle__link-gates:hover,
+.section-castle__link-gates:focus-visible {
+    background-color: #3E4A78;
+    color: #E5E7EB;
+    outline: 1px solid #ffd37a;
+    transition: 0.2s;
+    box-shadow:
+        0 10px 26px rgba(0, 0, 0, 0.8),
+        0 0 16px rgba(246, 187, 89, 0.5);
+}
+
+.section-castle__img img {
+    outline: 1px solid #D3A625;
+    width: 100%;
+    border-radius: 4px;
+}
+
+@media (width >=450px) {
+    .section-castle__links {
+        flex-direction: row;
+        justify-content: center;
+        margin: 16px 0;
+    }
+
+    .section-castle__links>a {
+        width: 200px;
+        padding: 12px;
+    }
+}
+
+@media (width >=600px) {
+    .section-castle__img img {
+        width: 550px;
+    }
+}
+
+@media (width >=768px) {
+    .section-castle {
+        margin-top: 94px;
+    }
+
+    .section-castle__links>a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (width >=992px) {
+    .section-castle {
+        display: flex;
+        gap: 12px;
+        max-height: 700px;
+    }
+
+    .section-castle__texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .section-castle__img img {
+        width: 100%;
+    }
+}
+
+@media (width >=1100px) {
+    .section-castle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .section-castle__texts {
+        height: 500px;
+        max-width: 620px;
+    }
+    
+    .section-castle__img img {
+        width: 500px;
+    }
+    
+    .section-castle__links {
+        /* outline: 1px solid red; */
+        
+        /* justify-content: start; */
+    }
+    
+    .section-castle__links>a {
+        /* outline: 1px solid red; */
+        width: 60%;
+    }
+}
+
+/* Section houses */
+.section-houses__ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.section-houses__style {
+    background-color: rgba(15, 23, 42, 0.98);
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 16px;
+}
+
+.section-houses__gryffindor {
+    outline: 2px solid rgba(185, 28, 28, 0.9);
+}
+
+.section-houses__gryffindor p {
+    color: rgba(245, 73, 73, 0.9);
+}
+
+.section-houses__slytherin {
+    outline: 2px solid rgba(22, 163, 74, 0.9);
+}
+
+.section-houses__slytherin p {
+    color: rgba(46, 212, 107, 0.9);
+}
+
+.section-houses__ravenclaw {
+    outline: 2px solid rgba(30, 64, 175, 0.6);
+}
+
+.section-houses__ravenclaw p {
+    color: #7BD7FF;
+}
+
+.section-houses__hufflepuff {
+    outline: 2px solid rgba(234, 179, 8, 0.9);
+}
+
+.section-houses__hufflepuff p {
+    color: rgba(242, 197, 63, 0.9);
+}
+
+.section-houses img {
+    width: 100%;
+}
+
+.section-houses__ul span {
+    color: #f6bb59;
+    text-shadow:
+        0 0 8px #f6bb59;
+    font-size: 1.1rem;
+}
+
+@media (width >=500px) {
+    .section-houses>p {
+        margin-bottom: 16px;
+    }
+    
+    .section-houses__ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-houses__style {
+        width: 80%;
+        margin-top: 0;
+    }
+}
+
+@media (width >=600px) {
+    .section-houses__style {
+        width: 40%;
+    }
+}
+
+@media (width >=992px) {
+    .section-houses {
+        padding-bottom: 16px;
+    }
+   
+    .section-houses__style {
+        width: 23%;
+        margin-top: 0;
+    }
+}
+
+/* Section activities */
+.title-activities {
+    margin-top: 24px;
+}
+
+.section-activities img {
+    width: 100%;
+    outline: 1px solid #D3A625;
+    border-radius: 4px;
+}
+
+@media (width >=600px) {
+    .title-activities {
+        text-align: start;
+        margin: 24px 0 12px;
+    }
+    
+    .section-activities {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .section-activities__commom-style {
+        width: 40%;
+        margin-top: 0;
+    }
+
+    figcaption {
+        font-size: 1.2rem;
+    }
+
+    .section-activities__text {
+        padding-bottom: 8px;
+    }
+}
+
+@media (width >=768px) {
+    .section-activities__text {
+        text-align: start;
+    }
+}
+
+@media (width >=992px) {
+    .section-activities__commom-style {
+        width: 30%;
+    }
+}
+
+@media (width >=1280px) {
+    .title-activities {
+        max-width: 1296px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

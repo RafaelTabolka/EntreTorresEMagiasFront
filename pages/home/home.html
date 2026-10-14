@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hogwarts | Página Inicial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Carrega o CSS -->
+  <link rel="stylesheet" href="/components/navbar/navbar.css">
+  <link rel="stylesheet" href="/components/footer/footer.css">
+  <link rel="stylesheet" href="/pages/home/home.css">
+
+  <!-- Carrega o JS -->
+  <script src="/components/navbar/navbar.js" defer></script>
+  <script src="/components/footer/footer.js" defer></script>
+  <script src="/pages/home/home.js" defer></script>
+
+  <link rel="icon" href="/favicon/favicon.png">
+</head>
+
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#content">Pular Para o Conteúdo Principal</a>
+
+  <app-navbar></app-navbar>
+
+  <!-- Main content -->
+  <main class="main-content" id="content" tabindex="-1">
+    <!-- Section castle -->
+    <section aria-labelledby="titulo-home" class="section-castle">
+      <div class="section-castle__texts">
+        <h2>Chegada ao Castelo</h2>
+
+        <p>
+          O lago negro, a floresta proibida e o Salão Principal aguardam os novos estudantes que chegam todos os anos a
+          bordo do Expresso de Hogwarts. Bruxos e bruxas de todas as casas se reúnem para estudar feitiços, poções e
+          encantamentos que moldam o mundo mágico.
+        </p>
+
+        <div class="section-castle__links">
+          <a class="section-castle__link-gates" href="/pages/staff/login/login.html">Portões de Hogwarts</a>
+        </div>
+      </div>
+
+      <div class="section-castle__img">
+        <figure>
+          <img src="/assets/img/img-home/img_castle.png" alt="castelo de hogwarts sobre a luz do luar e com luzes acesas">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Section houses -->
+    <section aria-label="Resumo das casas de Hogwarts" class="section-houses">
+      <h2>As Quatro Casas</h2>
+
+      <p>
+        Grifinória, Sonserina, Corvinal e Lufa-Lufa competem pela Taça das Casas
+        durante todo o ano letivo.
+      </p>
+
+      <ul class="section-houses__ul">
+        <!-- Conteúdo gerado dinamicamente com JS -->
+         
+        <!-- <li class="section-houses__style section-houses__gryffindor">
+          <h3>Grifinória</h3>
+
+          <figure>
+            <img src="/assets/img/img-home/img_gryffindor.png" alt="símbolo da Grifinória">
+          </figure>
+
+          <p>Pontos Atuais: <span">410</span></p>
+        </li>
+
+        <li class="section-houses__style section-houses__slytherin">
+          <h3>Sonserina</h3>
+
+          <figure>
+            <img src="/assets/img/img-home/img_slytherin.png" alt="símbolo da Sonserina">
+          </figure>
+
+          <p>Pontos Atuais: <span">395</span></p>
+        </li>
+
+        <li class="section-houses__style section-houses__ravenclaw">
+          <h3>Corvinal</h3>
+
+          <figure>
+            <img src="/assets/img/img-home/img_ravenclaw.png" alt="símbolo da Corvinal">
+          </figure>
+
+          <p>Pontos Atuais: <span">382</span></p>
+        </li>
+
+        <li class="section-houses__style section-houses__hufflepuff">
+          <h3>Lufa-Lufa</h3>
+
+          <figure>
+            <img src="/assets/img/img-home/img_hufflepuff.png" alt="símbolo da Lufa-Lufa">
+          </figure>
+
+          <p>Pontos Atuais: <span">360</span></p>
+        </li> -->
+      </ul>
+    </section>
+
+    <section aria-labelledby="titulo-vida-hogwarts">
+      <h2 class="title-activities">Vida no Castelo</h2>
+
+      <!-- Section activities -->
+      <section class="section-activities">
+        <article class="section-activities__commom-style section-activities__main-salon">
+          <h3>Salão Principal</h3>
+
+          <figure>
+            <img src="/assets/img/img-home/img_salon.png" alt="salão principal de hogwarts e um banquete sob as grandes mesas">
+            <figcaption>Banquetes sob o céu encantado</figcaption>
+          </figure>
+
+          <p class="section-activities__text">
+            Velas flutuantes, mesas das casas e um teto que reflete o céu do lado de fora
+            recebem os alunos para refeições, anúncios importantes e celebrações.
+          </p>
+        </article>
+
+        <article class="section-activities__commom-style section-activities__common-room">
+          <h3>Salas comunais</h3>
+
+          <figure>
+            <img src="/assets/img/img-home/common_room.png" alt="sala comunal das quatro casas">
+            <figcaption>Refúgios de cada casa</figcaption>
+          </figure>
+
+          <p class="section-activities__text">
+            Do conforto da lareira da Grifinória às profundezas do lago em Sonserina,
+            cada sala comunal guarda histórias e tradições únicas.
+          </p>
+        </article>
+
+        <article class="section-activities__commom-style section-activities__classes">
+          <h3>Aulas e Arredores</h3>
+
+          <figure>
+            <img src="/assets/img/img-home/img_classes.png" alt="classe com caldeirões e poções sendo feitas">
+            <figcaption>Poções, feitiços e aventuras</figcaption>
+          </figure>
+
+          <p class="section-activities__text">
+            Entre caldeirões borbulhantes e feitiços praticados com cuidado, alunos percorrem
+            corredores cheios de armaduras, tapeçarias e portas secretas.
+          </p>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <app-footer></app-footer>
+</body>
+
+</html>

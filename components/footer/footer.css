@@ -1,0 +1,25 @@
+footer {
+    margin-top: 16px;
+    padding: 12px;
+    text-align: center;
+    background-color: #15192A;
+    border-top: 1px solid #414A65;
+}
+
+footer>p {
+    color: #bac5d9;
+    font-size: 1rem;
+}
+
+@media (width >=768px) {
+    footer {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer>p {
+        margin: 0;
+    }
+}

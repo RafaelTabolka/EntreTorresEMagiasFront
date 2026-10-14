@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hogwarts | Quadro de Avisos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Carrega o CSS -->
+  <link rel="stylesheet" href="/components/navbar/navbar.css">
+  <link rel="stylesheet" href="/components/footer/footer.css">
+  <link rel="stylesheet" href="/pages/notice-boards/notice-boards.css">
+
+  <!-- Carrega o favicon -->
+  <link rel="icon" href="/favicon/favicon.png">
+
+  <!-- Carrega o JS -->
+  <script src="/components/navbar/navbar.js" defer></script>
+  <script src="/components/footer/footer.js" defer></script>
+  <script src="/pages/notice-boards/notice-boards.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Pular Para o Conteúdo Principal</a>
+
+  <app-navbar></app-navbar>
+
+  <main id="content" class="container-content" tabindex="-1">
+    <!-- Section container -->
+    <section aria-labelledby="titulo-quadro">
+      <!-- <p>Salão Principal</p> -->
+      <h2 id="titulo-quadro">Quadro de Avisos de Hogwarts</h2>
+
+      <p>
+        No coração do Salão Principal, um grande quadro reúne comunicados importantes
+        para todos os estudantes e funcionários da escola.
+      </p>
+    </section>
+
+
+    <section aria-label="Lista de avisos" class="section-list">
+      <button class="button-plus">Criar Aviso</button>
+
+      <ul class="section-list__ul">
+        <!-- Conteúdo gerado dinamicamente no js -->
+
+        <!-- <li class="section-list__li">
+          <article>
+            <header>
+              <h3>Jantar especial no Salão Principal</h3>
+              <p>
+                <time datetime="2025-09-01">1º de setembro &mdash;</time>
+                Diretor Alvo Dumbledore
+              </p>
+            </header>
+            <p class="section-list__text-bottom">
+              Convidamos todos os estudantes para o jantar de boas-vindas no Salão Principal.
+              As mesas estarão preparadas para receber os novos alunos e celebrar o início
+              de mais um ano letivo.
+            </p>
+          </article>
+        </li>
+
+        <li class="section-list__li">
+          <article>
+            <header>
+              <h3>Treino de Quadribol</h3>
+              <p>
+                <time datetime="2025-09-05">5 de setembro</time>
+                &mdash;
+                Professora Minerva McGonagall
+              </p>
+            </header>
+            <p class="section-list__text-bottom">
+              Os integrantes dos times de Quadribol de todas as casas devem comparecer ao campo
+              para o primeiro treino do ano. Selecione sua vassoura com cuidado e chegue pontualmente.
+            </p>
+          </article>
+        </li>
+
+        <li class="section-list__li">
+          <article>
+            <header>
+              <h3>Restrição na Floresta Proibida</h3>
+              <p>
+                <time datetime="2025-09-10">10 de setembro</time>
+                &mdash;
+                Guarda-caça Rúbeo Hagrid
+              </p>
+            </header>
+            <p class="section-list__text-bottom">
+              Fica estritamente proibida a entrada de estudantes na Floresta Proibida sem
+              acompanhamento autorizado. Criaturas mágicas andam inquietas nas últimas noites.
+            </p>
+          </article>
+        </li>
+        
+        <li class="section-list__li">
+          <article>
+            <header>
+              <h3>Silêncio na biblioteca</h3>
+              <p>
+                <time datetime="2025-09-12">12 de setembro</time>
+                &mdash;
+                Madame Pince
+              </p>
+            </header>
+            <p class="section-list__text-bottom">
+              Lembramos que a biblioteca é um local de estudo. Conversas em voz alta, risadas
+              e feitiços praticados entre as estantes não serão tolerados.
+            </p>
+          </article>
+        </li>
+
+        <li class="section-list__li">
+          <article>
+            <header>
+              <h3>Silêncio na biblioteca</h3>
+              <p>
+                <time datetime="2025-09-12">12 de setembro</time>
+                &mdash;
+                Madame Pince
+              </p>
+            </header>
+            <p class="section-list__text-bottom">
+              Lembramos que a biblioteca é um local de estudo. Conversas em voz alta, risadas
+              e feitiços praticados entre as estantes não serão tolerados.
+            </p>
+          </article>
+        </li> -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- Dialog edit -->
+  <dialog class="dialog-edit">
+    <form id="form-edit" class="form">
+      
+      <div class="dialog-edit__button-close-form-edit">
+        <button class="dialog-edit__button-delete" type="button">
+          <img src="/assets/img/img-notice-boards/img_delete.png" alt="lixeira com a tampa aberta">
+        </button>
+
+        <button class="dialog-edit__button-close" type="button">
+          <img src="/assets/img/img-notice-boards/img_close_form.png" alt="duas varinhas cruzadas num formato de x">
+        </button>
+      </div>
+
+      <fieldset class="dialog-edit__fieldset">
+        <legend>Alterar Aviso</legend>
+
+        <figure class="dialog-edit__figure">
+          <img src="/assets/img/img-notice-boards/img_edit.png" alt="símbolo de hogwarts sob o formulário de registro">
+        </figure>
+
+        <div class="dialog-edit__style-field dialog-edit__title">
+          <label for="noticeTitle">Título<span>*</span></label>
+          <input id="noticeTitle" name="noticeTitle" type="text" placeholder="Ex.: Boas-vindas e regras..." required>
+        </div>
+
+        <div class="dialog-edit__style-field dialog-edit__date">
+          <label for="noticeDay">Data<span>*</span></label>
+          <input id="noticeDay" name="noticeDay" type="date" required>
+        </div>
+
+        <div class="dialog-edit__style-field dialog-edit__content">
+          <label for="noticeContent">Conteúdo<span>*</span></label>
+          <textarea id="noticeContent" name="noticeContent" rows="4"
+            placeholder="Alunos devem respeitar horários..."></textarea>
+        </div>
+
+        <div class="dialog-edit__button">
+          <button class="dialog-edit__button-edit" type="submit">Selar Alterações</button>
+          <button class="dialog-edit__button-cancel" type="button">Cancelar</button>
+        </div>
+      </fieldset>
+    </form>
+  </dialog>
+
+  <!-- Dialog register -->
+  <dialog class="dialog-register">
+    <form id="form-register" class="form">
+      
+      <div class="dialog-register__button-close-form-register">
+        <button class="dialog-register__button-close" type="button">
+          <img src="/assets/img/img-notice-boards/img_close_form.png" alt="duas varinhas cruzadas num formato de x">
+        </button>
+      </div>
+
+      <fieldset class="dialog-register__fieldset">
+        <legend>Cadastrar Aviso</legend>
+
+        <figure class="dialog-register__figure">
+          <img src="/assets/img/img-notice-boards/img_form_register.png" alt="símbolo de hogwarts sob o formulário de registro">
+        </figure>
+
+        <div class="dialog-register__style-field dialog-register__title">
+          <label for="noticeTitle">Título<span>*</span></label>
+          <input id="noticeTitle" name="noticeTitle" type="text" placeholder="Ex.: Boas-vindas e regras..." required>
+        </div>
+
+        <div class="dialog-register__style-field dialog-register__date">
+          <label for="noticeDay">Data<span>*</span></label>
+          <input id="noticeDay" name="noticeDay" type="date" required>
+        </div>
+
+        <div class="dialog-register__style-field dialog-register__content">
+          <label for="noticeContent">Conteúdo<span>*</span></label>
+          <textarea id="noticeContent" name="noticeContent" rows="4"
+            placeholder="Alunos devem respeitar horários..."></textarea>
+        </div>
+
+        <div class="dialog-register__button">
+          <button class="dialog-register__button-register" type="submit">Selar Criação</button>
+          <button class="dialog-register__button-cancel" type="button">Cancelar</button>
+        </div>
+      </fieldset>
+    </form>
+  </dialog>
+
+  <app-footer></app-footer>
+</body>
+
+</html>

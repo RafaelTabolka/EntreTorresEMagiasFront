@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hogwarts | Cadastro de Estudante</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Carrega o CSS -->
+  <link rel="stylesheet" href="/components/navbar/navbar.css">
+  <link rel="stylesheet" href="/components/footer/footer.css">
+  <link rel="stylesheet" href="/pages/witches-and-wizards/register/register.css">
+
+  <!-- Carrega o favicon -->
+  <link rel="icon" href="/favicon/favicon.png">
+
+  <!-- Carrega o JS -->
+  <script src="/components/navbar/navbar.js" defer></script>
+  <script src="/components/footer/footer.js" defer></script>
+  <script src="/pages/witches-and-wizards/register/register.js" defer></script>
+</head>
+
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#content">Pular Para o Conteúdo Principal</a>
+
+  <app-navbar></app-navbar>
+
+  <main id="content" tabindex="-1">
+    <!-- Section container -->
+    <section class="container-content" aria-labelledby="titulo-registro">
+      <h2>Registro de novo estudante</h2>
+
+      <p>
+        Este pergaminho reúne as informações de bruxos e bruxas aceitos em Hogwarts,
+        desde os primeiros anos até os estudantes prestes a concluir seus estudos.
+      </p>
+
+      <!-- Section form -->
+      <section aria-label="Formulário de registro de estudante">
+        <form id="form-register-student" class="form">
+          <fieldset class="form__fieldset">
+            <legend>Dados do estudante</legend>
+
+            <figure class="form__figure">
+              <img src="/assets/img/img-register/img_top_form_register.jpeg"
+                alt="símbolo de hogwarts sob o formulário de registro">
+            </figure>
+
+            <div class="form__style-field form__complete-name">
+              <label for="studentName">Nome Completo<span>*</span></label>
+              <input id="studentName" name="studentName" type="text" placeholder="Ex.: Hermione Jean Granger" required>
+            </div>
+
+            <div class="form__style-field form__origin">
+              <label for="originCountry">Origem<span>*</span></label>
+              <input id="originCountry" name="originCountry" type="text" placeholder="Ex.: Londres, Vale de Godric..." required>
+            </div>
+
+            <div class="form__style-field form__houses-hogwarts">
+              <label for="house">Casa de Hogwarts<span>*</span></label>
+              <select id="house" name="house" required>
+                <option value="">Selecione uma casa</option>
+                <option value="grifinoria">Grifinória</option>
+                <option value="sonserina">Sonserina</option>
+                <option value="corvinal">Corvinal</option>
+                <option value="lufalufa">Lufa-Lufa</option>
+              </select>
+            </div>
+
+            <div class="form__style-field form__year">
+              <label for="schoolYear">Ano em Hogwarts <span>*</span></label>
+              <select id="schoolYear" name="schoolYear" required>
+                <option value="">Selecione o ano</option>
+                <option value="1">1º ano</option>
+                <option value="2">2º ano</option>
+                <option value="3">3º ano</option>
+                <option value="4">4º ano</option>
+                <option value="5">5º ano</option>
+                <option value="6">6º ano</option>
+                <option value="7">7º ano</option>
+              </select>
+            </div>
+
+            <div class="form__style-field form__wand">
+              <label for="wand">Varinha<span>*</span></label>
+              <input id="wand" name="wand" type="text" placeholder="Ex: Azevinho, pena de fênix, 11''" required>
+            </div>
+
+            <div class="form__style-field form__blood">
+              <label for="bloodStatus">Tipo de Sangue<span>*</span></label>
+              <select id="bloodStatus" name="bloodStatus" required>
+                <option value="">Selecione uma opção</option>
+                <option value="puro">Sangue puro</option>
+                <option value="mestiço">Mestiço</option>
+                <option value="trouxa">Nascido trouxa</option>
+                <option value="desconhecido">Desconhecido</option>
+              </select>
+            </div>
+
+            <div class="form__style-field form__pet">
+              <label for="pet">Animal de Estimação<span>*</span></label>
+              <select id="pet" name="pet" required>
+                <option value="">Selecione um Animal</option>
+                <option value="coruja">Coruja</option>
+                <option value="gato">Gato</option>
+                <option value="sapo">Sapo</option>
+                <option value="rato">Rato</option>
+              </select>
+            </div>
+
+            <div class="form__style-field form__student-status">
+              <label for="studentStatus">Situação do Aluno<span>*</span></label>
+              <select id="studentStatus" name="studentStatus" required>
+                <option value="">Selecione a situação</option>
+                <option value="matriculado">Matriculado</option>
+                <option value="afastado">Afastado</option>
+                <option value="intercambio">Intercâmbio</option>
+                <option value="expulso">Expulso</option>
+                <option value="formado">Formado</option>
+              </select>
+            </div>
+
+            <div class="form__style-field form__observations">
+              <label for="headmasterNotes">Observações do Diretor</label>
+              <textarea id="headmasterNotes" name="headmasterNotes" rows="4"
+                placeholder="Talentos especiais, histórico familiar, advertências..."></textarea>
+            </div>
+
+            <div class="form__button">
+              <button type="submit">Selar Carta de Admissão</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <app-footer></app-footer>
+</body>
+
+</html>
